@@ -12,7 +12,7 @@
 - DRY ( Do not Repeat Yourself )
 
 ---
-@nap[north]
+@snap[north]
 ### The good and the bad ( no ugly yet )
 @snapend
 
