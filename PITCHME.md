@@ -13,7 +13,7 @@
 
 ---
 @snap[north span-100]
-### What programmers do think about template metaprograming ?
+### How about metaprogamming ?
 @snapend
 
 @snap[west span-50]
