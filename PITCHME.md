@@ -25,7 +25,7 @@
 ### The good
 @ol
 - Type safety 
-- Code correctness ( fail early )
+- Code correctness
 - More optimizations 
 @olend
 @snapend
