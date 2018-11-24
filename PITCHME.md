@@ -12,11 +12,15 @@
 - DRY ( Do not Repeat Yourself )
 
 ---
-@snap[north]
-### The good and the bad ( no ugly yet )
+@snap[north-west]
+### The bad
 @snapend
 
-@snap[east]
+@snap[north-east]
+### The good
+@snapend
+
+@snap[west]
 @ol
 - Code complexity
 - Error reporting
@@ -24,7 +28,7 @@
 @olend
 @snapend
 
-@snap[west]
+@snap[east]
 @ol
 - Type safety 
 - Code correctness ( fail early )
