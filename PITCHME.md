@@ -1,6 +1,6 @@
-# Flux
+# Practical Metaprogramming in C++ for everyone\*
 
-An application architecture for React
+by Olgierd Humeńczuk 
 
 ---
 
