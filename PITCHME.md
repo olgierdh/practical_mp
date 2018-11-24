@@ -12,8 +12,8 @@
 - DRY ( Do not Repeat Yourself )
 
 ---
-@snap[west]
-### The bad
+@snap[west span-50]
+#### The bad
 @ol
 - Code complexity
 - Error reporting
@@ -21,8 +21,8 @@
 @olend
 @snapend
 
-@snap[east]
-### The good
+@snap[east span-50]
+#### The good
 @ol
 - Type safety 
 - Code correctness
