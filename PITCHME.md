@@ -12,4 +12,9 @@ An application architecture for React
 
 ---
 
-
+```CPP
+int test( int a )
+{
+    return a;
+}
+```
