@@ -13,7 +13,7 @@
 
 ---
 @snap[west span-50]
-#### The bad
+The bad
 @ol
 - Code complexity
 - Error reporting
@@ -22,7 +22,7 @@
 @snapend
 
 @snap[east span-50]
-#### The good
+The good
 @ol
 - Type safety 
 - Code correctness
