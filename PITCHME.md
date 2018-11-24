@@ -8,16 +8,24 @@
 ### C++ evolution
 
 - Derived from C language
-- Rason for having templates
+- Reasons for having templates
 - DRY ( Do not Repeat Yourself )
 
 ---
 
-### Problems with TMP
+### The good and the bad ( no ugly yet )
 
+@snap[east]
 - Code complexity
 - Error reporting
 - Compile times
+@snapend
+
+@snap[west]
+- Type safety 
+- Code correctness ( fail early )
+- More optimizations 
+@snapend
 
 ---
 
