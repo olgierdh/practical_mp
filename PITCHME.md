@@ -5,15 +5,23 @@
 
 ---
 
-### Design
+### C++ evolution
 
-    - Bla 
-    - Bla 2 
-    - Bla 3
+    - Derived from C language
+    - Rason for having templates
+    - DRY ( Do not Repeat Yourself )
 
 ---
 
-```CPP
+### Problems with TMP
+
+    - Code complexity
+    - Error reporting
+    - Compile times
+    
+---
+
+```cpp
 int test( int a )
 {
     return a;
