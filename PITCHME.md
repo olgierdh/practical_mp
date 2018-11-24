@@ -1,5 +1,4 @@
 ## Practical Metaprogramming 
-### in C++ 
 #### for everyone\*
 ##### Olgierd Humeńczuk 
 
