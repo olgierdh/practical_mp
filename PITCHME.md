@@ -12,6 +12,10 @@
 - DRY ( Do not Repeat Yourself )
 
 ---
+@snap[north span-100]
+### What programmers do think about template metaprograming ?
+@snapend
+
 @snap[west span-50]
 #### The bad
 @ul
