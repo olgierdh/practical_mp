@@ -114,6 +114,23 @@ const auto result = funA( funB( funC( data ) ) );
 
 OpenGL function binding
 
+```cpp
+template < typename R, typename... Args, typename... TArgs >
+auto gl_call( R ( *func )( Args... ), TArgs&&... args ) -> R
+{
+    const auto e0 = glGetError();
+    R ret{0};
+
+    if ( e0 == GL_NO_ERROR ) { ret = func( static_cast< Args >( std::forward< TArgs >( args ) )... ); }
+    else { report_gl_dirty( e0 ); return ret; }
+
+    const auto e1 = glGetError();
+    if ( e1 != GL_NO_ERROR ) { report_gl_error( e1 ); }
+    
+    return ret;
+}
+```
+
 --- 
 
 ### Example of using detection idiom 
