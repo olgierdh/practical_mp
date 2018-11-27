@@ -110,8 +110,7 @@ const auto result = funA( funB( funC( data ) ) );
 
 ---
 
-### Example of using templates for debugging
-
+#### Example of using templates for debugging
 OpenGL function binding
 
 ```cpp
