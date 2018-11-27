@@ -51,13 +51,31 @@ Metaprogramming can be used:
 * Whenever the choice or structure is limited and depends on type or types
     * Calling functions in some order described via type lists
     * Generating bindings for an API like a programming language or just a library
+
+---
+
+### What kind of problems we can solve using metaprogramming ? 
+
+Metaprogramming can be used:
 * For generating data using math functions
     * Lookup tables ( trigonometric functions, textures )
     * Datastructures accessed at compile time
     * Algebraic datatypes ( tuples, variants, etc... )
+
+---
+
+### What kind of problems we can solve using metaprogramming ? 
+
+Metaprogramming can be used:
 * For selecting processing path based on type qualities 
     * Using memcpy instead of assignment operator for types that are trivially copyable 
     * Auto serialization/deserialization 
+
+---
+
+### What kind of problems we can solve using metaprogramming ? 
+
+Metaprogramming can be used:
 * For optimisation 
     * Small buffer
     * Static polymorphism 
