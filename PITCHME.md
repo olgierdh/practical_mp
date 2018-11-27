@@ -41,6 +41,11 @@ Basics of metaprogramming
 
 * S.F.I.N.A.E. [example](https://godbolt.org/z/sA01si)
 * Parameter packs [example](https://godbolt.org/z/i8BeI2)
+* Type lists and iteration [example]()
+
+---
+
+### 
 
 ---
 
