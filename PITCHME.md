@@ -45,7 +45,7 @@ Basics of metaprogramming
 
 ---
 
-### What kind of problems we can solve using metaprogramming ? 
+### What kind of problems we can solve using metaprogramming ? (1/4)
 
 Metaprogramming can be used:
 * Whenever the choice or structure is limited and depends on type or types
@@ -54,7 +54,7 @@ Metaprogramming can be used:
 
 ---
 
-### What kind of problems we can solve using metaprogramming ? 
+### What kind of problems we can solve using metaprogramming ? (2/4)
 
 Metaprogramming can be used:
 * For generating data using math functions
@@ -64,7 +64,7 @@ Metaprogramming can be used:
 
 ---
 
-### What kind of problems we can solve using metaprogramming ? 
+### What kind of problems we can solve using metaprogramming ? (3/4)
 
 Metaprogramming can be used:
 * For selecting processing path based on type qualities 
@@ -73,7 +73,7 @@ Metaprogramming can be used:
 
 ---
 
-### What kind of problems we can solve using metaprogramming ? 
+### What kind of problems we can solve using metaprogramming ? (4/4)
 
 Metaprogramming can be used:
 * For optimisation 
@@ -87,6 +87,18 @@ Metaprogramming can be used:
 ### Tacit style programming
 
 What is Tacit programming ? 
+
+Remember pipes ? 
+
+    ```bash
+    ls -al | grep -i "sdl" | sort
+    ```
+
+Functional programming approach:
+
+    ```cpp
+    const auto result = funA( funB( funC( data ) ) );
+    ```
 
 ---
 
