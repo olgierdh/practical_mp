@@ -41,17 +41,70 @@ Basics of metaprogramming
 
 * S.F.I.N.A.E. [example](https://godbolt.org/z/sA01si)
 * Parameter packs [example](https://godbolt.org/z/i8BeI2)
-* Type lists and iteration [example]()
+* Type lists and iteration [example](https://godbolt.org/z/p569Mp)
 
 ---
 
-### 
+### What kind of problems we can solve using metaprogramming ? 
+
+Metaprogramming can be used:
+* Whenever the choice or structure is limited and depends on type or types
+    * Calling functions in some order described via type lists
+    * Generating bindings for an API like a programming language or just a library
+* For generating data using math functions
+    * Lookup tables ( trigonometric functions, textures )
+    * Datastructures accessed at compile time
+    * Algebraic datatypes ( tuples, variants, etc... )
+* For selecting processing path based on type qualities 
+    * Using memcpy instead of assignment operator for types that are trivially copyable 
+    * Auto serialization/deserialization 
+* For optimisation 
+    * Small buffer
+    * Static polymorphism 
+    * Enabling SSE using proper data layout and accessors
+* For type safe type erasure
 
 ---
 
-```cpp
-int test( int a )
-{
-    return a;
-}
-```
+### Tacit style programming
+
+What is Tacit programming ? 
+
+---
+
+### Tacit style metaprogramming
+
+--- 
+
+### Old approach vs TMP
+
+---
+
+### Example of using templates for debugging
+
+OpenGL function binding
+
+--- 
+
+### Example of using detection idiom 
+
+---
+
+### Example of using type erasure
+
+* type erasure
+    * type safe void* 
+
+---
+
+### Example of using metaprogramming for generating bindings
+
+---
+
+Summary
+
+---
+
+Thank You!
+Questions ?
+
