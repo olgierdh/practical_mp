@@ -90,15 +90,15 @@ What is Tacit programming ?
 
 Remember pipes ? 
 
-    ```bash
-    ls -al | grep -i "sdl" | sort
-    ```
+```bash
+ls -al | grep -i "sdl" | sort
+```
 
 Functional programming approach:
 
-    ```cpp
-    const auto result = funA( funB( funC( data ) ) );
-    ```
+```cpp
+const auto result = funA( funB( funC( data ) ) );
+```
 
 ---
 
