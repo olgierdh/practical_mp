@@ -19,7 +19,7 @@
 #### The bad
 @ul
 - Code complexity
-- Error reporting
+- [Error reporting](https://godbolt.org/z/O-Fk6O)
 - Compile times
 @ulend
 @snapend
