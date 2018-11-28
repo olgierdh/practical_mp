@@ -116,8 +116,6 @@ Few facts about TMP
 
 Example from Nova Engine:
 
-@snap[west]
-```cpp
 namespace ecs
 {
     template < typename M >
@@ -148,9 +146,7 @@ namespace ecs
     };
 }
 ```
-@snapend
 
-@snap[east]
 ```cpp
 namespace ecs
 {
@@ -180,7 +176,6 @@ namespace ecs
     };
 } // namespace ecs
 ```
-@snapend
 
 ---
 
