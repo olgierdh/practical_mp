@@ -71,7 +71,6 @@ Metaprogramming can be used:
 * For generating data using math functions
     * Lookup tables ( trigonometric functions, textures )
     * Datastructures accessed at compile time
-    * Algebraic datatypes ( tuples, variants, etc... )
 
 ---
 
