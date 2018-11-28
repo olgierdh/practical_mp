@@ -205,15 +205,14 @@ auto gl_call( R ( *func )( Args... ), TArgs&&... args ) -> R
 
 ---
 
-### Example of using metaprogramming for generating bindings
-
+### Summary
+* Use libraries !
+* Use Tacit approach in order to divide complex functions into a set of simple ones
+* Use proper naming
+* Hide complex code behind simple to use interfaces
 
 ---
 
-Summary
-
----
-
-Thank You!
+### Thank You!
 Questions ?
 
