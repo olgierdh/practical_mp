@@ -30,7 +30,7 @@
 #### The bad
 @ul
 - Code complexity
-- [Error reporting](https://godbolt.org/z/O-Fk6O)
+- Error reporting
 - Compile times
 @ulend
 @snapend
