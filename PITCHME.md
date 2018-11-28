@@ -1,4 +1,3 @@
-theme-override : assets/custom.css
 
 ## Practical Metaprogramming 
 #### for everyone\*
