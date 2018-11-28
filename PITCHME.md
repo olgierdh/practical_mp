@@ -104,9 +104,15 @@ const auto result = funA( funB( funC( data ) ) );
 
 ### Tacit style metaprogramming
 
+[vocabulary](https://godbolt.org/z/OyHhEw)
+
 --- 
 
 ### Old approach vs TMP
+
+Example from Nova Engine:
+
+
 
 ---
 
@@ -132,18 +138,20 @@ auto gl_call( R ( *func )( Args... ), TArgs&&... args ) -> R
 
 --- 
 
-### Example of using detection idiom 
+### Example of using detection idiom for generating bindings
+
+[Generating VAO description from type](https://godbolt.org/z/V3zcHL)
 
 ---
 
 ### Example of using type erasure
 
-* type erasure
-    * type safe void* 
+[Multithread logger](https://godbolt.org/z/JeKoIm)
 
 ---
 
 ### Example of using metaprogramming for generating bindings
+
 
 ---
 
