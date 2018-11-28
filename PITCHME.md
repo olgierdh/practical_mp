@@ -154,9 +154,10 @@ template < typename ID, int I > struct message_idx {
 namespace detail {
 template < typename ID > struct i2type {
     template < int I >
-    using predicate = typename conditional<
+    using predicate = 
+    typename conditional<
         is_same< typename message_idx< ID, I >::type, empty_type >::value >::
-        template type< tml::nop< typename message_idx< ID, I >::type >,
+            template type< tml::nop< typename message_idx< ID, I >::type >,
                         tml::prepend< typename message_idx< ID, I >::type > >;
 };
 } // namespace detail
