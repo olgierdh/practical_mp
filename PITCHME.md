@@ -195,7 +195,7 @@ auto gl_call( R ( *func )( Args... ), TArgs&&... args ) -> R
 
 ### Example of using detection idiom for generating bindings
 
-[Generating VAO description from type](https://godbolt.org/z/V3zcHL)
+[Generating VAO description from type](https://godbolt.org/z/Qnpbyu)
 
 ---
 
