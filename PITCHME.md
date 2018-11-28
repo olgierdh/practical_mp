@@ -6,9 +6,17 @@
 
 ### C++ evolution
 
+@snap[west span-50]
+@ul
 - Derived from C language
 - Reasons for having templates
 - DRY ( Do not Repeat Yourself )
+@ulend
+@snapend
+
+@snap[east span-50]
+![PLATE](assets/hydrant.jpg)
+@snapend
 
 ---
 @snap[north span-100]
