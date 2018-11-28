@@ -16,7 +16,7 @@
 @ulend
 @snapend
 
-@snap[east span-50]
+@snap[east sidebar]
 ![PLATE](assets/hydrant.jpg)
 @snapend
 
