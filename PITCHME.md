@@ -212,7 +212,7 @@ auto gl_call( R ( *func )( Args... ), TArgs&&... args ) -> R
 
 ### Example of using type erasure
 
-[Multithread logger](https://godbolt.org/z/JeKoIm)
+[Multithread logger](https://godbolt.org/z/DrcyHG)
 
 ---
 
