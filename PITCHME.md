@@ -123,7 +123,8 @@ struct message_idx{
     using type = empty_type;
 };
 
-template < typename ID, int I = 0, typename T = typename message_idx<ID,I>::type >
+template < typename ID, int I = 0, 
+    typename T = typename message_idx<ID,I>::type >
 struct message_gather{
     using type = typename mpl::append< mpl::list<T>, 
         typename message_gather< ID, I + 1 >::type >;
