@@ -111,11 +111,10 @@ Few facts about TMP
 [Example of basic vocabulary types used in TMP](https://godbolt.org/z/OyHhEw)
 
 --- 
-
-### Old approach vs TMP
-
+#### Old approach vs TMP ( 1/2 )
 Example from Nova Engine:
 
+```cpp
 namespace ecs
 {
     template < typename M >
@@ -146,6 +145,9 @@ namespace ecs
     };
 }
 ```
+---
+#### Old approach vs TMP ( 2/2 )
+Example from Nova Engine:
 
 ```cpp
 namespace ecs
