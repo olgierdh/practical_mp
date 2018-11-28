@@ -115,68 +115,56 @@ Few facts about TMP
 Example from Nova Engine:
 
 ```cpp
-namespace ecs
-{
-    template < typename M >
-    struct message_traits;
+template < typename M >
+struct message_traits;
 
-    template < typename ID, int I >
-    struct message_idx
-    {
-        using type = empty_type;
-    };
+template < typename ID, int I >
+struct message_idx{
+    using type = empty_type;
+};
 
-    template < typename ID, int I = 0, typename T = typename message_idx<ID,I>::type >
-    struct message_gather
-    {
-        using type = typename mpl::append< mpl::list<T>, typename message_gather< ID, I + 1 >::type >;
-    };
+template < typename ID, int I = 0, typename T = typename message_idx<ID,I>::type >
+struct message_gather{
+    using type = typename mpl::append< mpl::list<T>, 
+        typename message_gather< ID, I + 1 >::type >;
+};
 
-    template < typename ID, int I >
-    struct message_gather< ID, I, empty_type >
-    {
-        using type = typename message_gather< ID, I + 1 >::type;
-    };
+template < typename ID, int I >
+struct message_gather< ID, I, empty_type >{
+    using type = typename message_gather< ID, I + 1 >::type;
+};
 
-    template < typename ID >
-    struct message_gather< ID, 100, empty_type >
-    {
-        using type = mpl::empty_list;
-    };
-}
+template < typename ID >
+struct message_gather< ID, 100, empty_type >{
+    using type = mpl::empty_list;
+};
 ```
 ---
 #### Old approach vs TMP ( 2/2 )
 Example from Nova Engine:
 
 ```cpp
-namespace ecs
+template < typename M > struct message_traits;
+
+template < typename ID, int I > struct message_idx {
+    using type = empty_type;
+};
+
+namespace detail {
+template < typename ID > struct i2type {
+    template < int I >
+    using predicate = typename conditional<
+        is_same< typename message_idx< ID, I >::type, empty_type >::value >::
+        template type< tml::nop< typename message_idx< ID, I >::type >,
+                        tml::prepend< typename message_idx< ID, I >::type > >;
+};
+} // namespace detail
+
+template < typename ID > struct message_gather
 {
-    template < typename M > struct message_traits;
-
-    template < typename ID, int I > struct message_idx
-    {
-        using type = empty_type;
-    };
-
-    namespace detail
-    {
-        template < typename ID > struct i2type
-        {
-            template < int I >
-            using predicate = typename conditional<
-                is_same< typename message_idx< ID, I >::type, empty_type >::value >::
-                template type< tml::nop< typename message_idx< ID, I >::type >,
-                               tml::prepend< typename message_idx< ID, I >::type > >;
-        };
-    } // namespace detail
-
-    template < typename ID > struct message_gather
-    {
-        using type = tml::call_f< tml::gen_n_types_by_index<
-            100, detail::i2type< ID >::template predicate, tml::fold<> > >;
-    };
-} // namespace ecs
+    using type = tml::call_f< tml::gen_n_types_by_index<
+        100, detail::i2type< ID >::template predicate, tml::fold<> > >;
+};
 ```
 
 ---
